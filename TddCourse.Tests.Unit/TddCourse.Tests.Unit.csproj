@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Part8\Parameterized_Combined.cs" />
+    <Compile Include="Part8\Parameterized_Random.cs" />
+    <Compile Include="Part8\Parameterized_Range.cs" />
     <Compile Include="Part8\Parameterized_TestCase.cs" />
+    <Compile Include="Part8\Parameterized_Values.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
