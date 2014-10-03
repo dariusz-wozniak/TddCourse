@@ -2,13 +2,13 @@
 
 namespace TddCourse
 {
-    internal interface ICalculator
+    public interface ICalculator
     {
         float Divide(int dividend, int divisor);
         event EventHandler CalculatedEvent;
     }
 
-    internal class Calculator : ICalculator
+    public class Calculator : ICalculator
     {
         public float Divide(int dividend, int divisor)
         {
