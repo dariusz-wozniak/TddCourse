@@ -2,7 +2,6 @@ using NUnit.Framework;
 
 namespace TddCourse.Tests.Unit.Part8
 {
-    // Remember to never use Random attribute in unit tests
     [TestFixture]
     public class Parameterized_Combined
     {
