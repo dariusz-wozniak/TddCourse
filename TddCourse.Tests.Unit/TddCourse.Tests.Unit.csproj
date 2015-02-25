@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Part10\Theory.cs" />
     <Compile Include="Part8\Parameterized_Combined.cs" />
     <Compile Include="Part8\Parameterized_Random.cs" />
     <Compile Include="Part8\Parameterized_Range.cs" />
