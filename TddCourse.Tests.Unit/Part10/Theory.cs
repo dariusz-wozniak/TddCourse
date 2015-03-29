@@ -7,7 +7,7 @@ namespace TddCourse.Tests.Unit.Part10
         [Datapoint]
         public int Zero = 0;
 
-        [Datapoints]
+        [Datapoint]
         public int Negative = -1;
         
         [Datapoint]
