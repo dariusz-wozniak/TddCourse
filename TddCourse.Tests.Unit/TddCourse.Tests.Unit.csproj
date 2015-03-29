@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Part10\Theory.cs" />
+    <Compile Include="Part11\CountTest.cs" />
+    <Compile Include="Part11\GenericCalculatorTests.cs" />
     <Compile Include="Part8\Parameterized_Combined.cs" />
     <Compile Include="Part8\Parameterized_Random.cs" />
     <Compile Include="Part8\Parameterized_Range.cs" />
