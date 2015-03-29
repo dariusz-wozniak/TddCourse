@@ -38,5 +38,10 @@ namespace TddCourse
             var handler = CalculatedEvent;
             if (handler != null) handler(this, EventArgs.Empty);
         }
+
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
