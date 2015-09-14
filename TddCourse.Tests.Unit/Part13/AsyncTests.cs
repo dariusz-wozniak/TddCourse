@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace TddCourse.Tests.Unit.Part13
 {
@@ -11,6 +12,13 @@ namespace TddCourse.Tests.Unit.Part13
             var calculator = new Calculator();
             float quotient = await calculator.DivideAsync(10, 2);
             Assert.That(quotient, Is.EqualTo(5));
+        }
+
+        [Test]
+        public async Task DivideAsyncLambdaTest()
+        {
+            var calculator = new Calculator();
+            Assert.That(async () => await calculator.DivideAsync(10, 2), Is.EqualTo(5));
         }
     }
 }
