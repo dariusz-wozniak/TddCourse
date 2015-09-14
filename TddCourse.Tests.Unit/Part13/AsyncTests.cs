@@ -16,7 +16,7 @@ namespace TddCourse.Tests.Unit.Part13
         }
 
         [Test]
-        public async Task DivideAsyncLambdaTest()
+        public void DivideAsyncLambdaTest()
         {
             var calculator = new Calculator();
             Assert.That(async () => await calculator.DivideAsync(10, 2), Is.EqualTo(5));
