@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace TddCourse.Tests.Unit.Part13
@@ -19,6 +20,13 @@ namespace TddCourse.Tests.Unit.Part13
         {
             var calculator = new Calculator();
             Assert.That(async () => await calculator.DivideAsync(10, 2), Is.EqualTo(5));
+        }
+
+        [Test]
+        public void WhenDivisorIsZero_ThenDivideByZeroExceptionIsThrown()
+        {
+            var calculator = new Calculator();
+            Assert.Throws<DivideByZeroException>(async () => await calculator.DivideAsync(10, 0));
         }
     }
 }
