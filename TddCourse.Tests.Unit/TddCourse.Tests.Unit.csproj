@@ -47,6 +47,7 @@
     <Compile Include="Part10\Theory.cs" />
     <Compile Include="Part11\CountTest.cs" />
     <Compile Include="Part11\GenericCalculatorTests.cs" />
+    <Compile Include="Part13\AsyncTests.cs" />
     <Compile Include="Part4\CalculatorTests.cs" />
     <Compile Include="Part5\CalculatorTests.cs" />
     <Compile Include="Part8\Parameterized_Combined.cs" />
@@ -67,6 +68,7 @@
       <Name>TddCourse</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

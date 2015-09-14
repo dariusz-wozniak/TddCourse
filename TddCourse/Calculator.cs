@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace TddCourse
 {
@@ -8,6 +9,8 @@ namespace TddCourse
     {
         float Divide(int dividend, int divisor);
         float Divide(double dividend, double divisor);
+        Task<float> DivideAsync(double dividend, double divisor);
+        
         event EventHandler CalculatedEvent;
     }
 
@@ -29,6 +32,14 @@ namespace TddCourse
             float result = (float)dividend / (float)divisor;
             OnCalculated();
             return result;
+        }
+
+        public async Task<float> DivideAsync(double dividend, double divisor)
+        {
+            await Task.Delay(millisecondsDelay: 1000)
+                      .ConfigureAwait(continueOnCapturedContext: false);
+
+            return (float)dividend/(float)divisor;
         }
 
         public event EventHandler CalculatedEvent;
