@@ -1,7 +1,9 @@
-﻿namespace TddCourse
+﻿using System;
+
+namespace TddCourse
 {
     public interface ICustomer
     {
-        int Age { get; set; }
+        int GetAge();
     }
 }
