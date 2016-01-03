@@ -57,6 +57,7 @@
     <Compile Include="Part11\CountTest.cs" />
     <Compile Include="Part11\GenericCalculatorTests.cs" />
     <Compile Include="Part13\AsyncTests.cs" />
+    <Compile Include="Part14\CustomerMock.cs" />
     <Compile Include="Part14\CustomerValidatorTests.cs" />
     <Compile Include="Part4\CalculatorTests.cs" />
     <Compile Include="Part5\CalculatorTests.cs" />
