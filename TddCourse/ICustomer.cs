@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TddCourse
+﻿namespace TddCourse
 {
     public interface ICustomer
     {
