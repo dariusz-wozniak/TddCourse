@@ -63,7 +63,9 @@
     <Compile Include="Part13\AsyncTests.cs" />
     <Compile Include="Part14\CustomerMock.cs" />
     <Compile Include="Part14\CustomerValidatorTests.cs" />
-    <Compile Include="Part15\CustomerValidatorTests.cs" />
+    <Compile Include="Part15\CustomerValidatorTests_MoqFunctional.cs" />
+    <Compile Include="Part15\CustomerValidatorTests_MoqImperative.cs" />
+    <Compile Include="Part15\FunctionalStyleDemo.cs" />
     <Compile Include="Part4\CalculatorTests.cs" />
     <Compile Include="Part5\CalculatorTests.cs" />
     <Compile Include="Part8\Parameterized_Combined.cs" />
