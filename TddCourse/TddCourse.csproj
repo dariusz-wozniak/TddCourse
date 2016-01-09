@@ -41,8 +41,10 @@
   <ItemGroup>
     <Compile Include="CalculatorExample\Calculator.cs" />
     <Compile Include="CalculatorExample\GenericCalculator.cs" />
+    <Compile Include="CustomerExample\CustomerRepository.cs" />
     <Compile Include="CustomerExample\ICustomer.cs" />
     <Compile Include="CustomerExample\CustomerValidator.cs" />
+    <Compile Include="CustomerExample\ICustomerValidator.cs" />
     <Compile Include="CustomerExample\IOrder.cs" />
     <Compile Include="CustomerExample\IPhoneNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
