@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace TddCourse.Tests.Unit.Part15
 {
     [TestFixture]
-    public class CustomerValidatorTests
+    public class CustomerValidatorTests_MoqImperative
     {
         [Test]
         public void WhenCustomerIsNull_ThenArgumentNullExceptionIsThrown()
@@ -23,7 +23,7 @@ namespace TddCourse.Tests.Unit.Part15
         {
             var validator = new CustomerValidator();
 
-            Mock<ICustomer> customerMock = new Mock<ICustomer>();
+            var customerMock = new Mock<ICustomer>();
             customerMock.Setup(x => x.GetAge()).Returns(16);
 
             bool validate = validator.Validate(customerMock.Object);
@@ -36,7 +36,7 @@ namespace TddCourse.Tests.Unit.Part15
         {
             var validator = new CustomerValidator();
 
-            Mock<ICustomer> customerMock = new Mock<ICustomer>();
+            var customerMock = new Mock<ICustomer>();
             customerMock.Setup(x => x.GetAge()).Returns(expectedAge);
 
             bool validate = validator.Validate(customerMock.Object);
