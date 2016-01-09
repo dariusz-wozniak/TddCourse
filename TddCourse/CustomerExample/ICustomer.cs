@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TddCourse
+namespace TddCourse.CustomerExample
 {
     public interface ICustomer
     {

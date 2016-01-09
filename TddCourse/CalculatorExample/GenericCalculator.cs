@@ -1,4 +1,4 @@
-﻿namespace TddCourse
+﻿namespace TddCourse.CalculatorExample
 {
     public class GenericCalculator<T>
     {

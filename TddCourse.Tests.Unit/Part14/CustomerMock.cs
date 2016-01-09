@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using TddCourse.CustomerExample;
 
 namespace TddCourse.Tests.Unit.Part14
 {

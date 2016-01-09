@@ -39,12 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="GenericCalculator.cs" />
-    <Compile Include="ICustomer.cs" />
-    <Compile Include="CustomerValidator.cs" />
-    <Compile Include="IOrder.cs" />
-    <Compile Include="IPhoneNumber.cs" />
+    <Compile Include="CalculatorExample\Calculator.cs" />
+    <Compile Include="CalculatorExample\GenericCalculator.cs" />
+    <Compile Include="CustomerExample\ICustomer.cs" />
+    <Compile Include="CustomerExample\CustomerValidator.cs" />
+    <Compile Include="CustomerExample\IOrder.cs" />
+    <Compile Include="CustomerExample\IPhoneNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TddCourse
+namespace TddCourse.CustomerExample
 {
     public class CustomerValidator
     {

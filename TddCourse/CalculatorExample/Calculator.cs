@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace TddCourse
+namespace TddCourse.CalculatorExample
 {
     // PLEASE NOTE That code is only for TDD demonstration uses.
     // This is not a great example of how calculator design and code should looks like in the real/production life.

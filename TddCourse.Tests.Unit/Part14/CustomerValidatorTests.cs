@@ -1,6 +1,7 @@
 ﻿using System;
 using FluentAssertions;
 using NUnit.Framework;
+using TddCourse.CustomerExample;
 
 namespace TddCourse.Tests.Unit.Part14   
 {

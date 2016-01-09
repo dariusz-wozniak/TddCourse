@@ -1,4 +1,4 @@
-﻿namespace TddCourse
+﻿namespace TddCourse.CustomerExample
 {
     public interface IPhoneNumber
     {

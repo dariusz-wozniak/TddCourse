@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Moq;
+using TddCourse.CustomerExample;
 
 namespace TddCourse.Tests.Unit.Part15
 {

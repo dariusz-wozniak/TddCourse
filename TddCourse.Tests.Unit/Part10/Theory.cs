@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using TddCourse.CalculatorExample;
 
 namespace TddCourse.Tests.Unit.Part10
 {
