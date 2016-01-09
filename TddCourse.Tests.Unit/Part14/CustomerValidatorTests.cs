@@ -32,7 +32,7 @@ namespace TddCourse.Tests.Unit.Part14
         public void WhenCustomerHasAgeGreaterThanOrEqualTo18_ThenValidationPasses([Values(18, 19)] int expectedAge)
         {
             var validator = new CustomerValidator();
-            var customer = new CustomerMock(expectedAge: 18);
+            var customer = new CustomerMock(expectedAge: expectedAge);
 
             bool validate = validator.Validate(customer);
 
