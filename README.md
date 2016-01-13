@@ -1,4 +1,4 @@
 TddCourse
 =========
 
-TDD Course for DariuszWozniak.NET blog.
+TDD Course for [DariuszWozniak.NET](http://dariuszwozniak.net) blog.
