@@ -56,5 +56,23 @@ namespace TddCourse.Tests.Unit.Part15
 
             Mock.Get(customerValidatorMock).Verify(validator => validator.Validate(It.Is<ICustomer>(customer => customer.FirstName == "John")), Times.Once);
         }
+
+        [Test]
+        public void WhenAddingTwoCustomers_ThenValidateMethodIsCalledTwoTimes()
+        {
+            int called = 0;
+
+            var customerValidatorMock = new Mock<ICustomerValidator>();
+            customerValidatorMock.Setup(validator => validator.Validate(It.IsAny<ICustomer>()))
+                                 .Returns(true)
+                                 .Callback(() => called++);
+
+            var customerRepository = new CustomerRepository(customerValidatorMock.Object);
+
+            customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "John"));
+            customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "NotJohn"));
+
+            called.Should().Be(2);
+        }
     }
 }
