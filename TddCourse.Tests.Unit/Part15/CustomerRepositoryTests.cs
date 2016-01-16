@@ -36,7 +36,19 @@ namespace TddCourse.Tests.Unit.Part15
         [Test]
         public void WhenAddingCustomer_ThenValidateMethodOfValidatorIsCalledOnce()
         {
-            var customerValidatorMock = Mock.Of<ICustomerValidator>(validator => validator.Validate(It.Is<ICustomer>(customer => customer.FirstName == "John")));
+            var customerValidatorMock = new Mock<ICustomerValidator>();
+
+            var customerRepository = new CustomerRepository(customerValidatorMock.Object);
+
+            customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "John"));
+
+            customerValidatorMock.Verify(x => x.Validate(It.IsAny<ICustomer>()), Times.Exactly(2));
+        }
+
+        [Test]
+        public void WhenAddingCustomer_ThenValidateMethodOfValidatorIsCalledOnce__Functional()
+        {
+            var customerValidatorMock = Mock.Of<ICustomerValidator>();
 
             var customerRepository = new CustomerRepository(customerValidatorMock);
 
