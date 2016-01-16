@@ -2,7 +2,7 @@
 
 namespace TddCourse.CustomerExample
 {
-    public class CustomerValidator
+    public class CustomerValidator : ICustomerValidator
     {
         private const int MinimumAge = 18;
 
