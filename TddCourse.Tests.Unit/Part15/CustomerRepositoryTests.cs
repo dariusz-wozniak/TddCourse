@@ -42,7 +42,7 @@ namespace TddCourse.Tests.Unit.Part15
 
             customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "John"));
 
-            customerValidatorMock.Verify(x => x.Validate(It.IsAny<ICustomer>()), Times.Exactly(2));
+            customerValidatorMock.Verify(x => x.Validate(It.IsAny<ICustomer>()), Times.Once);
         }
 
         [Test]
