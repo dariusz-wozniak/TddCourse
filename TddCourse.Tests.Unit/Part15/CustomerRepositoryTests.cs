@@ -9,23 +9,9 @@ namespace TddCourse.Tests.Unit.Part15
     public class CustomerRepositoryTests
     {
         [Test]
-        public void WhenTryingToAddCustomerThatIsNotValidated_ThenFalseIsReturned()
-        {
-            var customerValidatorMock = Mock.Of<ICustomerValidator>(validator => 
-                validator.Validate(It.IsAny<ICustomer>()) == false);
-
-            var customerRepository = new CustomerRepository(customerValidatorMock);
-
-            bool added = customerRepository.Add(It.IsAny<ICustomer>());
-
-            added.Should().BeFalse();
-        }
-
-        [Test]
         public void WhenTryingToAddCustomerThatIsNotValidated_ThenCustomerIsNotAdded()
         {
-            var customerValidatorMock = Mock.Of<ICustomerValidator>(validator =>
-                validator.Validate(It.IsAny<ICustomer>()) == false);
+            var customerValidatorMock = Mock.Of<ICustomerValidator>(validator => validator.Validate(It.IsAny<ICustomer>()) == false);
 
             var customerRepository = new CustomerRepository(customerValidatorMock);
 
@@ -35,31 +21,28 @@ namespace TddCourse.Tests.Unit.Part15
         }
 
         [Test]
-        public void WhenTryingToAddCustomerThatIsValidated_ThenTrueIsReturned()
-        {
-            var customerValidatorMock = Mock.Of<ICustomerValidator>(validator =>
-                validator.Validate(It.IsAny<ICustomer>()) == true);
+        public void WhenTryingToAddMultipleCustomers_ThenOnlyValidatedOnesAreAdded()
+        { 
+            var customerValidatorMock = Mock.Of<ICustomerValidator>(validator => validator.Validate(It.Is<ICustomer>(customer => customer.FirstName == "John")) == true);
 
             var customerRepository = new CustomerRepository(customerValidatorMock);
 
-            bool added = customerRepository.Add(It.IsAny<ICustomer>());
+            customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "John"));
+            customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "NotJohn"));
 
-            added.Should().BeTrue();
+            customerRepository.AllCustomers.Should().HaveCount(1).And.OnlyContain(customer => customer.FirstName == "John");
         }
 
         [Test]
-        public void WhenTryingToAddCustomerThatIsValidated_ThenCustomerIsAdded()
+        public void WhenAddingCustomer_ThenValidateMethodOfValidatorIsCalledOnce()
         {
-            var customerMock = Mock.Of<ICustomer>(customer => customer.FirstName == "John");
-
-            var customerValidatorMock = Mock.Of<ICustomerValidator>(validator =>
-                validator.Validate(It.Is<ICustomer>(customer => customer.FirstName == "John")) == true);
+            var customerValidatorMock = Mock.Of<ICustomerValidator>(validator => validator.Validate(It.Is<ICustomer>(customer => customer.FirstName == "John")));
 
             var customerRepository = new CustomerRepository(customerValidatorMock);
 
-            customerRepository.Add(customerMock);
+            customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "John"));
 
-            customerRepository.AllCustomers.Should().HaveCount(1);
+            Mock.Get(customerValidatorMock).Verify(validator => validator.Validate(It.Is<ICustomer>(customer => customer.FirstName == "John")), Times.Once);
         }
     }
 }
