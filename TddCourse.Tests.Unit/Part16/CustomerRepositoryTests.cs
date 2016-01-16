@@ -3,7 +3,7 @@ using Moq;
 using NUnit.Framework;
 using TddCourse.CustomerExample;
 
-namespace TddCourse.Tests.Unit.Part15
+namespace TddCourse.Tests.Unit.Part16
 {
     [TestFixture]
     public class CustomerRepositoryTests
