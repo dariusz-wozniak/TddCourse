@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using TddCourse.CalculatorExample;
 
-namespace TddCourse.Tests.Unit.Part8
+namespace TddCourse.Tests.Unit.Part08
 {
     [TestFixture]
     public class Parameterized_Random

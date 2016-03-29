@@ -5,9 +5,10 @@ namespace TddCourse.CustomerExample
     public class Customer
     {
         public string FirstName { get; set; }
+
         public string LastName { get; set; }
 
-        public Customer(string firstName, string lastName)
+        public Customer(string firstName, string lastName) : this()
         {
             if (firstName == null) throw new ArgumentNullException(nameof(firstName));
             if (lastName == null) throw new ArgumentNullException(nameof(lastName));
@@ -15,5 +16,7 @@ namespace TddCourse.CustomerExample
             FirstName = firstName;
             LastName = lastName;
         }
+
+        public Customer() { }
     }
 }

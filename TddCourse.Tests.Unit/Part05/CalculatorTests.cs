@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using TddCourse.CalculatorExample;
 
-namespace TddCourse.Tests.Unit.Part5
+namespace TddCourse.Tests.Unit.Part05
 {
     [TestFixture]
     public class CalculatorTests

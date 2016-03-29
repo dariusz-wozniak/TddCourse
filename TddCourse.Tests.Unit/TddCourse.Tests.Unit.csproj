@@ -68,15 +68,16 @@
     <Compile Include="Part15\FunctionalStyleDemo.cs" />
     <Compile Include="Part16\CustomerRepositoryTests.cs" />
     <Compile Include="Part19\TestDoubles.cs" />
-    <Compile Include="Part4\CalculatorTests.cs" />
-    <Compile Include="Part5\CalculatorTests.cs" />
-    <Compile Include="Part8\Parameterized_Combined.cs" />
-    <Compile Include="Part8\Parameterized_Random.cs" />
-    <Compile Include="Part8\Parameterized_Range.cs" />
-    <Compile Include="Part8\Parameterized_TestCase.cs" />
-    <Compile Include="Part8\Parameterized_Values.cs" />
-    <Compile Include="Part9\Combinatorial.cs" />
-    <Compile Include="Part9\Sequential.cs" />
+    <Compile Include="Part04\CalculatorTests.cs" />
+    <Compile Include="Part05\CalculatorTests.cs" />
+    <Compile Include="Part08\Parameterized_Combined.cs" />
+    <Compile Include="Part08\Parameterized_Random.cs" />
+    <Compile Include="Part08\Parameterized_Range.cs" />
+    <Compile Include="Part08\Parameterized_TestCase.cs" />
+    <Compile Include="Part08\Parameterized_Values.cs" />
+    <Compile Include="Part09\Combinatorial.cs" />
+    <Compile Include="Part09\Sequential.cs" />
+    <Compile Include="Part20\CustomerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

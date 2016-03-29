@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="CalculatorExample\Calculator.cs" />
     <Compile Include="CalculatorExample\GenericCalculator.cs" />
+    <Compile Include="CustomerExample\AgeCalculator.cs" />
     <Compile Include="CustomerExample\Customer.cs" />
     <Compile Include="CustomerExample\CustomerReportingService.cs" />
     <Compile Include="CustomerExample\CustomerRepository.cs" />

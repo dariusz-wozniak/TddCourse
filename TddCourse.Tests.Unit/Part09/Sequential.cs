@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using TddCourse.CalculatorExample;
 
-namespace TddCourse.Tests.Unit.Part9
+namespace TddCourse.Tests.Unit.Part09
 {
     [TestFixture]
     public class Sequential
