@@ -45,10 +45,12 @@
     <Compile Include="CustomerExample\Customer.cs" />
     <Compile Include="CustomerExample\CustomerReportingService.cs" />
     <Compile Include="CustomerExample\CustomerRepository.cs" />
+    <Compile Include="CustomerExample\DateTimeProvider.cs" />
     <Compile Include="CustomerExample\ICustomer.cs" />
     <Compile Include="CustomerExample\CustomerValidator.cs" />
     <Compile Include="CustomerExample\ICustomerRepository.cs" />
     <Compile Include="CustomerExample\ICustomerValidator.cs" />
+    <Compile Include="CustomerExample\IDateTimeProvider.cs" />
     <Compile Include="CustomerExample\IOrder.cs" />
     <Compile Include="CustomerExample\IPhoneNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
