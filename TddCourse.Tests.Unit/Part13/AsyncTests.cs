@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using NUnit.Framework;
 using TddCourse.CalculatorExample;
 
@@ -8,7 +9,7 @@ namespace TddCourse.Tests.Unit.Part13
     public class AsyncTests
     {
         [Test]
-        public async void DivideAsyncTest()
+        public async Task DivideAsyncTest()
         {
             var calculator = new Calculator();
             float quotient = await calculator.DivideAsync(10, 2);
@@ -26,7 +27,7 @@ namespace TddCourse.Tests.Unit.Part13
         public void WhenDivisorIsZero_ThenDivideByZeroExceptionIsThrown()
         {
             var calculator = new Calculator();
-            Assert.Throws<DivideByZeroException>(async () => await calculator.DivideAsync(10, 0));
+            Assert.That(async () => await calculator.DivideAsync(2, 0), Throws.TypeOf<DivideByZeroException>());
         }
     }
 }

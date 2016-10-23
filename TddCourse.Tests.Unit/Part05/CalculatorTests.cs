@@ -21,14 +21,6 @@ namespace TddCourse.Tests.Unit.Part05
         }
 
         [Test]
-        [ExpectedException(typeof(DivideByZeroException))]
-        public void Divide_DivisionByZero_ThrowsException()
-        {
-            var calc = new Calculator();
-            calc.Divide(2, 0);
-        }
-
-        [Test]
         public void Divide_DivisionByZero_ThrowsException_AssertThrows()
         {
             var calc = new Calculator();
