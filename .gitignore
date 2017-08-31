@@ -150,3 +150,4 @@ UpgradeLog*.htm
 *.bim_*.settings
 # Microsoft Fakes
 FakesAssemblies/
+TddCourse/.vs/TddCourse/v15/sqlite3/storage.ide
