@@ -151,3 +151,5 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 TddCourse/.vs/TddCourse/v15/sqlite3/storage.ide
+# Visual Studio 2015 cache/options directory
+.vs/
