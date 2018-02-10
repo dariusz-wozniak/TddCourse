@@ -18,7 +18,7 @@ namespace TddCourse.Tests.Unit.Part19
 
             Action act = () => new Customer(firstName, lastName);
 
-            act.ShouldThrow<ArgumentNullException>();
+            act.Should().Throw<ArgumentNullException>();
         }
 
         [Test]

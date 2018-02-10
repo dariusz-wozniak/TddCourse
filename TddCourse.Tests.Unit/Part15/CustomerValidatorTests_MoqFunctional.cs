@@ -16,7 +16,7 @@ namespace TddCourse.Tests.Unit.Part15
 
             Action action = () => validator.Validate(null);
 
-            action.ShouldThrow<ArgumentNullException>();
+            action.Should().Throw<ArgumentNullException>();
         }
 
         [Test]
