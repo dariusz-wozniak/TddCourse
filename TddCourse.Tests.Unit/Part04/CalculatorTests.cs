@@ -3,7 +3,6 @@ using TddCourse.CalculatorExample;
 
 namespace TddCourse.Tests.Unit.Part04
 {
-    [TestFixture]
     public class CalculatorTests
     {
         [Test]

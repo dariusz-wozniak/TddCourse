@@ -5,7 +5,6 @@ using TddCourse.CustomerExample;
 
 namespace TddCourse.Tests.Unit.Part16
 {
-    [TestFixture]
     public class CustomerRepositoryTests
     {
         [Test]

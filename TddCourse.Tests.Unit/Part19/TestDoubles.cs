@@ -7,7 +7,6 @@ using TddCourse.CustomerExample;
 
 namespace TddCourse.Tests.Unit.Part19
 {
-    [TestFixture]
     public class TestDoubles
     {
         [Test]

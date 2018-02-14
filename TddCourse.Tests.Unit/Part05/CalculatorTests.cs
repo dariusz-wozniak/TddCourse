@@ -4,7 +4,6 @@ using TddCourse.CalculatorExample;
 
 namespace TddCourse.Tests.Unit.Part05
 {
-    [TestFixture]
     public class CalculatorTests
     {
         [TestCase(4, 2, 2.0f)]

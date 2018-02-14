@@ -6,7 +6,6 @@ using TddCourse.CustomerExample;
 
 namespace TddCourse.Tests.Unit.Part20
 {
-    [TestFixture]
     public class AgeCalculatorTests
     {
         [Test]

@@ -6,7 +6,6 @@ using TddCourse.CustomerExample;
 
 namespace TddCourse.Tests.Unit.Part15
 {
-    [TestFixture]
     public class CustomerValidatorTests_MoqImperative
     {
         [Test]

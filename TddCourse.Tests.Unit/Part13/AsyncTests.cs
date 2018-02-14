@@ -5,7 +5,6 @@ using TddCourse.CalculatorExample;
 
 namespace TddCourse.Tests.Unit.Part13
 {
-    [TestFixture]
     public class AsyncTests
     {
         [Test]

@@ -3,7 +3,6 @@ using TddCourse.CalculatorExample;
 
 namespace TddCourse.Tests.Unit.Part08
 {
-    [TestFixture]
     public class Parameterized_TestCase
     {
         [TestCase(4, 2, 2.0f)]

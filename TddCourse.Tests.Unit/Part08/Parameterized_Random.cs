@@ -3,7 +3,6 @@ using TddCourse.CalculatorExample;
 
 namespace TddCourse.Tests.Unit.Part08
 {
-    [TestFixture]
     public class Parameterized_Random
     {
         [Test]
