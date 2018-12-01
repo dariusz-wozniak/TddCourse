@@ -7,7 +7,7 @@ namespace TddCourse.Tests.Unit.Part08_ParameterizedTests
     {
         [Test]
         public void Divide_DividendIsZero_ReturnsQuotientEqualToZero(
-            [Range(@from: 1, to: 5, step: 1)] double divisor)
+            [Range(@from: 1, to: 5, step: 1)] int divisor)
         {
             var calc = new Calculator();
             float quotient = calc.Divide(0, divisor);
