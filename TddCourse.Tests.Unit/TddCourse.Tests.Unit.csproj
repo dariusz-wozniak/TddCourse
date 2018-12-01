@@ -66,27 +66,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Part10\Theory.cs" />
-    <Compile Include="Part11\CountTest.cs" />
-    <Compile Include="Part11\GenericCalculatorTests.cs" />
-    <Compile Include="Part13\AsyncTests.cs" />
-    <Compile Include="Part14\CustomerMock.cs" />
-    <Compile Include="Part14\CustomerValidatorTests.cs" />
-    <Compile Include="Part15\CustomerValidatorTests_MoqFunctional.cs" />
-    <Compile Include="Part15\CustomerValidatorTests_MoqImperative.cs" />
-    <Compile Include="Part15\FunctionalStyleDemo.cs" />
-    <Compile Include="Part16\CustomerRepositoryTests.cs" />
-    <Compile Include="Part19\TestDoubles.cs" />
-    <Compile Include="Part04\CalculatorTests.cs" />
-    <Compile Include="Part05\CalculatorTests.cs" />
-    <Compile Include="Part08\Parameterized_Combined.cs" />
-    <Compile Include="Part08\Parameterized_Random.cs" />
-    <Compile Include="Part08\Parameterized_Range.cs" />
-    <Compile Include="Part08\Parameterized_TestCase.cs" />
-    <Compile Include="Part08\Parameterized_Values.cs" />
-    <Compile Include="Part09\Combinatorial.cs" />
-    <Compile Include="Part09\Sequential.cs" />
-    <Compile Include="Part20\CustomerTests.cs" />
+    <Compile Include="Part10_Theories\Theory.cs" />
+    <Compile Include="Part11_GenericClasses\CountTest.cs" />
+    <Compile Include="Part11_GenericClasses\GenericCalculatorTests.cs" />
+    <Compile Include="Part13_TestsOfAsync\AsyncTests.cs" />
+    <Compile Include="Part14_ManualMocking\CustomerMock.cs" />
+    <Compile Include="Part14_ManualMocking\CustomerValidatorTests.cs" />
+    <Compile Include="Part15_IntroductionToMoq\CustomerValidatorTests_MoqFunctional.cs" />
+    <Compile Include="Part15_IntroductionToMoq\CustomerValidatorTests_MoqImperative.cs" />
+    <Compile Include="Part15_IntroductionToMoq\FunctionalStyleDemo.cs" />
+    <Compile Include="Part16_MoreMoq\CustomerRepositoryTests.cs" />
+    <Compile Include="Part19_WhatIsMockStubFakeSpyDummy\TestDoubles.cs" />
+    <Compile Include="Part04_VeryFirstTest\CalculatorTests.cs" />
+    <Compile Include="Part05_SecondTest\CalculatorTests.cs" />
+    <Compile Include="Part08_ParameterizedTests\Parameterized_Combined.cs" />
+    <Compile Include="Part08_ParameterizedTests\Parameterized_Random.cs" />
+    <Compile Include="Part08_ParameterizedTests\Parameterized_Range.cs" />
+    <Compile Include="Part08_ParameterizedTests\Parameterized_TestCase.cs" />
+    <Compile Include="Part08_ParameterizedTests\Parameterized_Values.cs" />
+    <Compile Include="Part09_CombinatorialAndSequentialTests\Combinatorial.cs" />
+    <Compile Include="Part09_CombinatorialAndSequentialTests\Sequential.cs" />
+    <Compile Include="Part20_MockingOfDateTime\CustomerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
