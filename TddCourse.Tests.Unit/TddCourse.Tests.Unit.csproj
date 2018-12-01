@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FluentAssertions\FluentAssertionsExamples.cs" />
     <Compile Include="Part10_Theories\Theory.cs" />
     <Compile Include="Part11_GenericClasses\CountTest.cs" />
     <Compile Include="Part11_GenericClasses\GenericCalculatorTests.cs" />
